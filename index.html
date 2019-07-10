@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		::-webkit-input-placeholder {color: white;}
+		::-moz-placeholder {color: white;}
+		:-ms-input-placeholder {color: white;}
+		:-moz-placeholder {color: white;}
+		#search1:focus::-webkit-input-placeholder {color: black;}
+		#search1:focus::-moz-placeholder {color: black;}
+		#search1:focus:-ms-input-placeholder {color: black;}
+		#search1:focus:-moz-placeholder {color: black;}
+		#content{
+         		Position:static;
+          		z-index: 1000000;
+        					}
+		#search1 {
+			height: 35px;
+			width: 500px;
+			border: 1px solid DodgerBlue; 
+			border-radius:50px; 
+			background-color: DodgerBlue;
+			color: white;
+			padding: 5px 20px;
+			transition-duration: 0.4s;
+						}
+		#search1:focus {
+			background-color: white;
+			color: black;
+						}
+		#submitButton {
+			background-color: DodgerBlue;
+			border: 1px solid DodgerBlue;
+			border-radius: 100px; 
+			color: white;
+			text-align: center;
+			text-dectoration: none;
+			diplay: inline-block;
+			padding: 15px 32px;
+			transition-duration: 0.4s;
+						}
+		#submitButton:hover {
+			background-color: white;
+			color: black;
+						}
+	</style>
+	<meta charset="UTF-8"/>
+</head>
+<body>
+
+	<form method="get" id="search" action="http://www.google.com/search">
+  		<input type="text" name="q" id="search1" maxlength="255" placeholder="Google Search"/>
+  		<input type="submit" value="Go" id="submitButton"/>
+	</form>
+
+</body>
+</html>
